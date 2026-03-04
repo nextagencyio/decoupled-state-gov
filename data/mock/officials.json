@@ -1,0 +1,193 @@
+{
+  "data": {
+    "nodeOfficials": {
+      "__typename": "NodeOfficialConnection",
+      "nodes": [
+        {
+          "__typename": "NodeOfficial",
+          "id": "official-governor",
+          "title": "Governor Patricia Wells",
+          "path": "/officials/governor-patricia-wells",
+          "body": {
+            "processed": "<p>Governor Patricia Wells has served as the 48th Governor of Columbia since January 2023. Prior to her election, she served as State Attorney General for eight years and was a federal prosecutor for a decade. Governor Wells has focused her administration on economic development, education reform, and environmental protection.</p><p>Under her leadership, Columbia has seen record job creation, expanded healthcare access, and significant investments in clean energy infrastructure.</p>",
+            "summary": "Governor Patricia Wells has served as the 48th Governor of Columbia since January 2023. Prior to her election, she served as State Attorney General for eight years and was a federal prosecutor for a d"
+          },
+          "position": "Governor",
+          "agency": [
+            {
+              "id": "Executive Office",
+              "name": "Executive Office"
+            }
+          ],
+          "email": "governor@columbia.gov",
+          "phone": "(555) 100-0001",
+          "office": "State Capitol Building, First Floor",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "alt": "Governor Patricia Wells",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeOfficial",
+          "id": "official-lt-governor",
+          "title": "Lt. Governor David Martinez",
+          "path": "/officials/lt-governor-david-martinez",
+          "body": {
+            "processed": "<p>Lt. Governor David Martinez brings over two decades of public service experience to his role. A former state legislator and small business owner, he serves as President of the State Senate and chairs the Governor's Council on Economic Development.</p><p>Lt. Governor Martinez has championed initiatives in workforce development, small business support, and rural economic investment.</p>",
+            "summary": "Lt. Governor David Martinez brings over two decades of public service experience to his role. A former state legislator and small business owner, he serves as President of the State Senate and chairs "
+          },
+          "position": "Lieutenant Governor",
+          "agency": [
+            {
+              "id": "Executive Office",
+              "name": "Executive Office"
+            }
+          ],
+          "email": "ltgovernor@columbia.gov",
+          "phone": "(555) 100-0002",
+          "office": "State Capitol Building, Second Floor",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "alt": "Lt. Governor David Martinez",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeOfficial",
+          "id": "official-secretary-state",
+          "title": "Secretary of State Linda Park",
+          "path": "/officials/secretary-of-state-linda-park",
+          "body": {
+            "processed": "<p>Secretary of State Linda Park oversees elections, business registrations, and state archives. She has modernized voter registration processes and implemented secure online business filing systems since taking office in 2023.</p><p>Secretary Park previously served as a county elections director for twelve years and is a recognized expert in election security and administration.</p>",
+            "summary": "Secretary of State Linda Park oversees elections, business registrations, and state archives. She has modernized voter registration processes and implemented secure online business filing systems sinc"
+          },
+          "position": "Secretary of State",
+          "agency": [
+            {
+              "id": "Executive Office",
+              "name": "Executive Office"
+            }
+          ],
+          "email": "sos@columbia.gov",
+          "phone": "(555) 100-0003",
+          "office": "State Office Building, Suite 300",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Secretary of State Linda Park",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeOfficial",
+          "id": "official-attorney-general",
+          "title": "Attorney General Marcus Webb",
+          "path": "/officials/attorney-general-marcus-webb",
+          "body": {
+            "processed": "<p>Attorney General Marcus Webb serves as the chief legal officer for the State of Columbia. His office enforces state laws, protects consumers, and represents the state in legal matters. AG Webb has prioritized combating consumer fraud, addressing the opioid crisis, and protecting civil rights.</p><p>Before his election, Attorney General Webb was a partner at a major law firm and served on the state's judicial nominating commission.</p>",
+            "summary": "Attorney General Marcus Webb serves as the chief legal officer for the State of Columbia. His office enforces state laws, protects consumers, and represents the state in legal matters. AG Webb has pri"
+          },
+          "position": "Attorney General",
+          "agency": [
+            {
+              "id": "Public Safety",
+              "name": "Public Safety"
+            }
+          ],
+          "email": "ag@columbia.gov",
+          "phone": "(555) 100-0004",
+          "office": "Justice Building, 10th Floor",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Attorney General Marcus Webb",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

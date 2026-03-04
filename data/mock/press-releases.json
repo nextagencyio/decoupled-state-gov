@@ -1,0 +1,144 @@
+{
+  "data": {
+    "nodePressReleases": {
+      "__typename": "NodePressReleaseConnection",
+      "nodes": [
+        {
+          "__typename": "NodePressRelease",
+          "id": "press-budget",
+          "title": "Governor Wells Announces $42 Billion FY2026 Budget Proposal",
+          "path": "/press-releases/fy2026-budget-proposal",
+          "body": {
+            "processed": "<p>Governor Patricia Wells today unveiled her proposed $42 billion budget for fiscal year 2026, prioritizing education, healthcare, and infrastructure investments while maintaining fiscal responsibility.</p><p>\"This budget reflects our commitment to investing in the services that matter most to Columbia families while keeping taxes low and maintaining our strong fiscal position,\" said Governor Wells.</p><h2>Budget Highlights</h2><ul><li>$12.5 billion for K-12 education, a 5% increase</li><li>$8.2 billion for healthcare and human services</li><li>$3.2 billion for transportation infrastructure</li><li>$1.5 billion for clean energy initiatives</li></ul><p>The budget proposal will now go to the State Legislature for review and approval.</p>",
+            "summary": "Governor Patricia Wells today unveiled her proposed $42 billion budget for fiscal year 2026, prioritizing education, healthcare, and infrastructure investments while maintaining fiscal responsibility."
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+            "alt": "FY2026 Budget Proposal",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Budget",
+              "name": "Budget"
+            }
+          ],
+          "featured": true,
+          "contactName": "Sarah Mitchell",
+          "contactEmail": "press@governor.columbia.gov"
+        },
+        {
+          "__typename": "NodePressRelease",
+          "id": "press-health",
+          "title": "Columbia Medicaid Expansion Reaches 350,000 Enrollees",
+          "path": "/press-releases/medicaid-enrollment-milestone",
+          "body": {
+            "processed": "<p>The Department of Health & Human Services today announced that Columbia's Medicaid Expansion program has enrolled its 350,000th member, a milestone that underscores the program's success in expanding healthcare access across the state.</p><p>\"Every one of these enrollees is a Columbia resident who now has access to quality healthcare,\" said Dr. Maria Santos, Secretary of Health & Human Services. \"This program is saving lives and improving health outcomes in communities across our state.\"</p><p>The milestone comes two years ahead of projections, driven by community outreach efforts and streamlined online enrollment processes.</p>",
+            "summary": "The Department of Health & Human Services today announced that Columbia's Medicaid Expansion program has enrolled its 350,000th member, a milestone that underscores the program's success in expanding "
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+            "alt": "Medicaid Enrollment Milestone",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Public Health",
+              "name": "Public Health"
+            }
+          ],
+          "featured": true,
+          "contactName": "Jennifer Lopez",
+          "contactEmail": "press@hhs.columbia.gov"
+        },
+        {
+          "__typename": "NodePressRelease",
+          "id": "press-infrastructure",
+          "title": "State Announces $800 Million Bridge Repair and Replacement Program",
+          "path": "/press-releases/bridge-repair-funding",
+          "body": {
+            "processed": "<p>The Department of Transportation today announced an $800 million program to repair or replace 200 structurally deficient bridges across Columbia over the next three years.</p><p>\"Safe bridges are essential infrastructure that connect our communities and support our economy,\" said Transportation Secretary Robert Chen. \"This unprecedented investment will address decades of deferred maintenance.\"</p><p>The program will prioritize bridges based on structural condition, traffic volume, and economic impact. Construction is expected to begin this spring on the first 40 projects.</p>",
+            "summary": "The Department of Transportation today announced an $800 million program to repair or replace 200 structurally deficient bridges across Columbia over the next three years.\"Safe bridges are essential i"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
+            "alt": "Bridge Repair Program",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "category": [
+            {
+              "id": "Infrastructure",
+              "name": "Infrastructure"
+            }
+          ],
+          "featured": false,
+          "contactName": "Mike Thompson",
+          "contactEmail": "press@dot.columbia.gov"
+        }
+      ]
+    }
+  }
+}

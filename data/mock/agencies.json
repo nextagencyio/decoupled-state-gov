@@ -1,0 +1,193 @@
+{
+  "data": {
+    "nodeAgencies": {
+      "__typename": "NodeAgencyConnection",
+      "nodes": [
+        {
+          "__typename": "NodeAgency",
+          "id": "agency-hhs",
+          "title": "Department of Health & Human Services",
+          "path": "/agencies/health-human-services",
+          "body": {
+            "processed": "<p>The Department of Health & Human Services is responsible for protecting the health and well-being of all Columbia residents. We administer programs in public health, mental health, substance abuse prevention, and social services.</p><h2>Our Mission</h2><p>To promote and protect the health, safety, and well-being of Columbia's residents through prevention, intervention, and service delivery.</p><h2>Key Services</h2><ul><li>Medicaid and health insurance assistance</li><li>Child and family services</li><li>Behavioral health programs</li><li>Aging and disability services</li></ul>",
+            "summary": "The Department of Health & Human Services is responsible for protecting the health and well-being of all Columbia residents. We administer programs in public health, mental health, substance abuse pre"
+          },
+          "headOfficial": "Dr. Maria Santos",
+          "phone": "(555) 234-5678",
+          "email": "hhs@columbia.gov",
+          "websiteUrl": "https://hhs.columbia.gov",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+            "alt": "Department of Health and Human Services",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "agencyType": [
+            {
+              "id": "Health & Human Services",
+              "name": "Health & Human Services"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeAgency",
+          "id": "agency-education",
+          "title": "Department of Education",
+          "path": "/agencies/education",
+          "body": {
+            "processed": "<p>The Department of Education oversees public education policy and funding for the State of Columbia. We ensure every child has access to high-quality education from pre-kindergarten through higher education.</p><h2>Our Mission</h2><p>To provide leadership and support to ensure academic excellence and equity for all students in Columbia.</p><h2>Key Initiatives</h2><ul><li>K-12 school funding and oversight</li><li>Teacher certification and professional development</li><li>Early childhood education programs</li><li>College affordability and scholarship programs</li></ul>",
+            "summary": "The Department of Education oversees public education policy and funding for the State of Columbia. We ensure every child has access to high-quality education from pre-kindergarten through higher educ"
+          },
+          "headOfficial": "James Richardson",
+          "phone": "(555) 345-6789",
+          "email": "education@columbia.gov",
+          "websiteUrl": "https://education.columbia.gov",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+            "alt": "Department of Education",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "agencyType": [
+            {
+              "id": "Education",
+              "name": "Education"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeAgency",
+          "id": "agency-transportation",
+          "title": "Department of Transportation",
+          "path": "/agencies/transportation",
+          "body": {
+            "processed": "<p>The Department of Transportation plans, builds, and maintains Columbia's transportation infrastructure. We manage roads, bridges, public transit systems, and bicycle and pedestrian facilities.</p><h2>Our Mission</h2><p>To provide a safe, efficient, and sustainable transportation system that connects communities and supports economic growth.</p><h2>Key Areas</h2><ul><li>Highway maintenance and construction</li><li>Public transit operations and planning</li><li>Bridge inspection and repair</li><li>Traffic safety programs</li></ul>",
+            "summary": "The Department of Transportation plans, builds, and maintains Columbia's transportation infrastructure. We manage roads, bridges, public transit systems, and bicycle and pedestrian facilities.Our Miss"
+          },
+          "headOfficial": "Robert Chen",
+          "phone": "(555) 456-7890",
+          "email": "dot@columbia.gov",
+          "websiteUrl": "https://dot.columbia.gov",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80",
+            "alt": "Department of Transportation",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "agencyType": [
+            {
+              "id": "Transportation",
+              "name": "Transportation"
+            }
+          ]
+        },
+        {
+          "__typename": "NodeAgency",
+          "id": "agency-environment",
+          "title": "Department of Environmental Protection",
+          "path": "/agencies/environmental-protection",
+          "body": {
+            "processed": "<p>The Department of Environmental Protection safeguards Columbia's natural resources and ensures environmental quality. We regulate air and water quality, manage waste disposal, and protect endangered species and habitats.</p><h2>Our Mission</h2><p>To protect, preserve, and enhance Columbia's environment for current and future generations.</p><h2>Key Programs</h2><ul><li>Air quality monitoring and regulation</li><li>Water resource management</li><li>Waste management and recycling programs</li><li>Conservation and land management</li></ul>",
+            "summary": "The Department of Environmental Protection safeguards Columbia's natural resources and ensures environmental quality. We regulate air and water quality, manage waste disposal, and protect endangered s"
+          },
+          "headOfficial": "Dr. Angela Foster",
+          "phone": "(555) 567-8901",
+          "email": "dep@columbia.gov",
+          "websiteUrl": "https://dep.columbia.gov",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+            "alt": "Department of Environmental Protection",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "agencyType": [
+            {
+              "id": "Environmental Protection",
+              "name": "Environmental Protection"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

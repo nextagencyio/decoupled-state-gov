@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "State of Columbia",
+          "path": "/homepage",
+          "heroTitle": "Serving the People of Columbia",
+          "heroSubtitle": "Transparent, Efficient, Accountable",
+          "heroDescription": {
+            "processed": "<p>The State of Columbia is committed to delivering essential services, protecting public welfare, and building a stronger future for all residents.</p>",
+            "summary": "The State of Columbia is committed to delivering essential services, protecting public welfare, and building a stronger future for all residents."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-population",
+              "title": "",
+              "number": "6.2M",
+              "label": "Residents Served"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-agencies",
+              "title": "",
+              "number": "45+",
+              "label": "State Agencies"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-budget",
+              "title": "",
+              "number": "$42B",
+              "label": "Annual Budget"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-employees",
+              "title": "",
+              "number": "85,000+",
+              "label": "State Employees"
+            }
+          ],
+          "featuredAgenciesTitle": "Key State Agencies",
+          "ctaTitle": "How Can We Help You?",
+          "ctaDescription": {
+            "processed": "<p>Find the services you need, from licensing and permits to benefits and assistance programs. We are here to serve you.</p>",
+            "summary": "Find the services you need, from licensing and permits to benefits and assistance programs. We are here to serve you."
+          },
+          "ctaPrimary": "Find Services",
+          "ctaSecondary": "Contact Us"
+        }
+      ]
+    }
+  }
+}

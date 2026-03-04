@@ -1,0 +1,209 @@
+{
+  "data": {
+    "nodePrograms": {
+      "__typename": "NodeProgramConnection",
+      "nodes": [
+        {
+          "__typename": "NodeProgram",
+          "id": "program-medicaid",
+          "title": "Medicaid Expansion Program",
+          "path": "/programs/medicaid-expansion",
+          "body": {
+            "processed": "<p>Columbia's Medicaid Expansion Program provides comprehensive health coverage to eligible low-income adults. Since its launch, the program has enrolled over 350,000 residents who previously lacked health insurance.</p><h2>Benefits</h2><ul><li>Doctor visits and preventive care</li><li>Hospital services</li><li>Prescription medications</li><li>Mental health and substance abuse treatment</li><li>Dental and vision coverage</li></ul><h2>How to Apply</h2><p>Applications can be submitted online through the Columbia Health Marketplace, by phone, or in person at any county HHS office.</p>",
+            "summary": "Columbia's Medicaid Expansion Program provides comprehensive health coverage to eligible low-income adults. Since its launch, the program has enrolled over 350,000 residents who previously lacked heal"
+          },
+          "agency": [
+            {
+              "id": "Health & Human Services",
+              "name": "Health & Human Services"
+            }
+          ],
+          "eligibility": "Adults ages 19-64 with income up to 138% of the Federal Poverty Level",
+          "budget": "$2.8 Billion",
+          "programArea": [
+            {
+              "id": "Healthcare",
+              "name": "Healthcare"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+            "alt": "Medicaid Expansion Program",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeProgram",
+          "id": "program-pre-k",
+          "title": "Universal Pre-K Initiative",
+          "path": "/programs/universal-pre-k",
+          "body": {
+            "processed": "<p>The Universal Pre-K Initiative provides free, high-quality pre-kindergarten education to all four-year-olds in Columbia. The program emphasizes school readiness, social-emotional development, and early literacy skills.</p><h2>Program Features</h2><ul><li>Full-day pre-kindergarten classes</li><li>Certified early childhood educators</li><li>Evidence-based curriculum</li><li>Family engagement programs</li></ul><h2>Enrollment</h2><p>Enrollment opens each spring for the following school year. Families can apply through their local school district or participating community providers.</p>",
+            "summary": "The Universal Pre-K Initiative provides free, high-quality pre-kindergarten education to all four-year-olds in Columbia. The program emphasizes school readiness, social-emotional development, and earl"
+          },
+          "agency": [
+            {
+              "id": "Education",
+              "name": "Education"
+            }
+          ],
+          "eligibility": "All four-year-old children residing in Columbia",
+          "budget": "$450 Million",
+          "programArea": [
+            {
+              "id": "Education",
+              "name": "Education"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+            "alt": "Universal Pre-K Initiative",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeProgram",
+          "id": "program-roads",
+          "title": "Statewide Road Improvement Program",
+          "path": "/programs/road-improvement",
+          "body": {
+            "processed": "<p>The Statewide Road Improvement Program is a multi-year initiative to repair, rebuild, and modernize Columbia's road infrastructure. The program addresses structurally deficient bridges, deteriorating highways, and expanding capacity in high-growth corridors.</p><h2>Program Goals</h2><ul><li>Repair 500 miles of deteriorated highways</li><li>Replace or rehabilitate 200 structurally deficient bridges</li><li>Improve traffic flow in 50 congested corridors</li><li>Expand bicycle and pedestrian infrastructure</li></ul>",
+            "summary": "The Statewide Road Improvement Program is a multi-year initiative to repair, rebuild, and modernize Columbia's road infrastructure. The program addresses structurally deficient bridges, deteriorating "
+          },
+          "agency": [
+            {
+              "id": "Transportation",
+              "name": "Transportation"
+            }
+          ],
+          "eligibility": "All Columbia municipalities and counties",
+          "budget": "$3.2 Billion over 5 years",
+          "programArea": [
+            {
+              "id": "Infrastructure",
+              "name": "Infrastructure"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=800&q=80",
+            "alt": "Road Improvement Program",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeProgram",
+          "id": "program-clean-energy",
+          "title": "Columbia Clean Energy Initiative",
+          "path": "/programs/clean-energy-initiative",
+          "body": {
+            "processed": "<p>The Columbia Clean Energy Initiative aims to transition the state to 80% renewable energy by 2035. The program provides incentives for solar and wind development, energy efficiency improvements, and electric vehicle adoption.</p><h2>Key Components</h2><ul><li>Solar and wind energy tax credits</li><li>Home energy efficiency rebates</li><li>Electric vehicle rebates and charging infrastructure</li><li>Clean energy workforce training</li></ul><h2>Impact</h2><p>Since launch, the initiative has created over 15,000 clean energy jobs and reduced carbon emissions by 18%.</p>",
+            "summary": "The Columbia Clean Energy Initiative aims to transition the state to 80% renewable energy by 2035. The program provides incentives for solar and wind development, energy efficiency improvements, and e"
+          },
+          "agency": [
+            {
+              "id": "Environmental Protection",
+              "name": "Environmental Protection"
+            }
+          ],
+          "eligibility": "Columbia residents, businesses, and municipalities",
+          "budget": "$1.5 Billion",
+          "programArea": [
+            {
+              "id": "Environment",
+              "name": "Environment"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+            "alt": "Clean Energy Initiative",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

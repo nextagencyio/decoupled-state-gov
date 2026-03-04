@@ -1,0 +1,610 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "State government homepage with hero, featured agencies, and services CTA",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline (e.g., 'Serving the People of Columbia')"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer description for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key state statistics (population, agencies, budget, etc.)"
+        },
+        {
+          "id": "featured_agencies_title",
+          "label": "Featured Agencies Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Section Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA Text",
+          "type": "string"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA Text",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "bundle": "agency",
+      "label": "Agency",
+      "description": "State government agencies and departments",
+      "body": true,
+      "fields": [
+        {
+          "id": "head_official",
+          "label": "Head Official",
+          "type": "string",
+          "description": "Name of agency head or director"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "type": "string"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "string"
+        },
+        {
+          "id": "website_url",
+          "label": "Website URL",
+          "type": "string"
+        },
+        {
+          "id": "image",
+          "label": "Agency Image",
+          "type": "image"
+        },
+        {
+          "id": "agency_type",
+          "label": "Agency Type",
+          "type": "term(agencies)[]"
+        }
+      ]
+    },
+    {
+      "bundle": "official",
+      "label": "Official",
+      "description": "Elected and appointed state government officials",
+      "body": true,
+      "fields": [
+        {
+          "id": "position",
+          "label": "Position/Title",
+          "type": "string",
+          "description": "Governor, Secretary, Director, etc."
+        },
+        {
+          "id": "agency",
+          "label": "Agency",
+          "type": "term(agencies)[]"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "string"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "type": "string"
+        },
+        {
+          "id": "office",
+          "label": "Office Location",
+          "type": "string"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "program",
+      "label": "Government Program",
+      "description": "State programs, services, and initiatives",
+      "body": true,
+      "fields": [
+        {
+          "id": "agency",
+          "label": "Agency",
+          "type": "term(agencies)[]"
+        },
+        {
+          "id": "eligibility",
+          "label": "Eligibility",
+          "type": "string",
+          "description": "Who is eligible for this program"
+        },
+        {
+          "id": "budget",
+          "label": "Budget",
+          "type": "string",
+          "description": "Annual budget allocation"
+        },
+        {
+          "id": "program_area",
+          "label": "Program Area",
+          "type": "term(program_areas)[]"
+        },
+        {
+          "id": "image",
+          "label": "Program Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "press_release",
+      "label": "Press Release",
+      "description": "Official press releases and announcements",
+      "body": true,
+      "fields": [
+        {
+          "id": "image",
+          "label": "Featured Image",
+          "type": "image"
+        },
+        {
+          "id": "category",
+          "label": "Category",
+          "type": "term(news_categories)[]"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool"
+        },
+        {
+          "id": "contact_name",
+          "label": "Contact Name",
+          "type": "string"
+        },
+        {
+          "id": "contact_email",
+          "label": "Contact Email",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, services, contact, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic value (e.g., '6.2M', '$42B')"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "What the number represents"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "agencies",
+      "label": "Agencies",
+      "description": "State government agencies and departments",
+      "terms": [
+        { "name": "Executive Office" },
+        { "name": "Health & Human Services" },
+        { "name": "Education" },
+        { "name": "Transportation" },
+        { "name": "Public Safety" },
+        { "name": "Environmental Protection" }
+      ]
+    },
+    {
+      "vocabulary": "program_areas",
+      "label": "Program Areas",
+      "description": "Areas of government services and programs",
+      "terms": [
+        { "name": "Healthcare" },
+        { "name": "Education" },
+        { "name": "Infrastructure" },
+        { "name": "Public Safety" },
+        { "name": "Social Services" },
+        { "name": "Environment" }
+      ]
+    },
+    {
+      "vocabulary": "news_categories",
+      "label": "News Categories",
+      "description": "Categories for press releases and news",
+      "terms": [
+        { "name": "Announcements" },
+        { "name": "Policy Updates" },
+        { "name": "Budget" },
+        { "name": "Public Health" },
+        { "name": "Infrastructure" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-population",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "6.2M",
+        "label": "Residents Served"
+      }
+    },
+    {
+      "id": "stat-agencies",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "45+",
+        "label": "State Agencies"
+      }
+    },
+    {
+      "id": "stat-budget",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "$42B",
+        "label": "Annual Budget"
+      }
+    },
+    {
+      "id": "stat-employees",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "85,000+",
+        "label": "State Employees"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "State of Columbia",
+        "hero_title": "Serving the People of Columbia",
+        "hero_subtitle": "Transparent, Efficient, Accountable",
+        "hero_description": "<p>The State of Columbia is committed to delivering essential services, protecting public welfare, and building a stronger future for all residents.</p>",
+        "stats_items": [
+          "@stat-population",
+          "@stat-agencies",
+          "@stat-budget",
+          "@stat-employees"
+        ],
+        "featured_agencies_title": "Key State Agencies",
+        "cta_title": "How Can We Help You?",
+        "cta_description": "<p>Find the services you need, from licensing and permits to benefits and assistance programs. We are here to serve you.</p>",
+        "cta_primary": "Find Services",
+        "cta_secondary": "Contact Us"
+      }
+    },
+    {
+      "id": "agency-hhs",
+      "type": "node.agency",
+      "path": "/agencies/health-human-services",
+      "values": {
+        "title": "Department of Health & Human Services",
+        "body": "<p>The Department of Health & Human Services is responsible for protecting the health and well-being of all Columbia residents. We administer programs in public health, mental health, substance abuse prevention, and social services.</p><h2>Our Mission</h2><p>To promote and protect the health, safety, and well-being of Columbia's residents through prevention, intervention, and service delivery.</p><h2>Key Services</h2><ul><li>Medicaid and health insurance assistance</li><li>Child and family services</li><li>Behavioral health programs</li><li>Aging and disability services</li></ul>",
+        "head_official": "Dr. Maria Santos",
+        "phone": "(555) 234-5678",
+        "email": "hhs@columbia.gov",
+        "website_url": "https://hhs.columbia.gov",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+          "alt": "Department of Health and Human Services"
+        },
+        "agency_type": ["Health & Human Services"]
+      }
+    },
+    {
+      "id": "agency-education",
+      "type": "node.agency",
+      "path": "/agencies/education",
+      "values": {
+        "title": "Department of Education",
+        "body": "<p>The Department of Education oversees public education policy and funding for the State of Columbia. We ensure every child has access to high-quality education from pre-kindergarten through higher education.</p><h2>Our Mission</h2><p>To provide leadership and support to ensure academic excellence and equity for all students in Columbia.</p><h2>Key Initiatives</h2><ul><li>K-12 school funding and oversight</li><li>Teacher certification and professional development</li><li>Early childhood education programs</li><li>College affordability and scholarship programs</li></ul>",
+        "head_official": "James Richardson",
+        "phone": "(555) 345-6789",
+        "email": "education@columbia.gov",
+        "website_url": "https://education.columbia.gov",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+          "alt": "Department of Education"
+        },
+        "agency_type": ["Education"]
+      }
+    },
+    {
+      "id": "agency-transportation",
+      "type": "node.agency",
+      "path": "/agencies/transportation",
+      "values": {
+        "title": "Department of Transportation",
+        "body": "<p>The Department of Transportation plans, builds, and maintains Columbia's transportation infrastructure. We manage roads, bridges, public transit systems, and bicycle and pedestrian facilities.</p><h2>Our Mission</h2><p>To provide a safe, efficient, and sustainable transportation system that connects communities and supports economic growth.</p><h2>Key Areas</h2><ul><li>Highway maintenance and construction</li><li>Public transit operations and planning</li><li>Bridge inspection and repair</li><li>Traffic safety programs</li></ul>",
+        "head_official": "Robert Chen",
+        "phone": "(555) 456-7890",
+        "email": "dot@columbia.gov",
+        "website_url": "https://dot.columbia.gov",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80",
+          "alt": "Department of Transportation"
+        },
+        "agency_type": ["Transportation"]
+      }
+    },
+    {
+      "id": "agency-environment",
+      "type": "node.agency",
+      "path": "/agencies/environmental-protection",
+      "values": {
+        "title": "Department of Environmental Protection",
+        "body": "<p>The Department of Environmental Protection safeguards Columbia's natural resources and ensures environmental quality. We regulate air and water quality, manage waste disposal, and protect endangered species and habitats.</p><h2>Our Mission</h2><p>To protect, preserve, and enhance Columbia's environment for current and future generations.</p><h2>Key Programs</h2><ul><li>Air quality monitoring and regulation</li><li>Water resource management</li><li>Waste management and recycling programs</li><li>Conservation and land management</li></ul>",
+        "head_official": "Dr. Angela Foster",
+        "phone": "(555) 567-8901",
+        "email": "dep@columbia.gov",
+        "website_url": "https://dep.columbia.gov",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+          "alt": "Department of Environmental Protection"
+        },
+        "agency_type": ["Environmental Protection"]
+      }
+    },
+    {
+      "id": "official-governor",
+      "type": "node.official",
+      "path": "/officials/governor-patricia-wells",
+      "values": {
+        "title": "Governor Patricia Wells",
+        "body": "<p>Governor Patricia Wells has served as the 48th Governor of Columbia since January 2023. Prior to her election, she served as State Attorney General for eight years and was a federal prosecutor for a decade. Governor Wells has focused her administration on economic development, education reform, and environmental protection.</p><p>Under her leadership, Columbia has seen record job creation, expanded healthcare access, and significant investments in clean energy infrastructure.</p>",
+        "position": "Governor",
+        "agency": ["Executive Office"],
+        "email": "governor@columbia.gov",
+        "phone": "(555) 100-0001",
+        "office": "State Capitol Building, First Floor",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+          "alt": "Governor Patricia Wells"
+        }
+      }
+    },
+    {
+      "id": "official-lt-governor",
+      "type": "node.official",
+      "path": "/officials/lt-governor-david-martinez",
+      "values": {
+        "title": "Lt. Governor David Martinez",
+        "body": "<p>Lt. Governor David Martinez brings over two decades of public service experience to his role. A former state legislator and small business owner, he serves as President of the State Senate and chairs the Governor's Council on Economic Development.</p><p>Lt. Governor Martinez has championed initiatives in workforce development, small business support, and rural economic investment.</p>",
+        "position": "Lieutenant Governor",
+        "agency": ["Executive Office"],
+        "email": "ltgovernor@columbia.gov",
+        "phone": "(555) 100-0002",
+        "office": "State Capitol Building, Second Floor",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+          "alt": "Lt. Governor David Martinez"
+        }
+      }
+    },
+    {
+      "id": "official-secretary-state",
+      "type": "node.official",
+      "path": "/officials/secretary-of-state-linda-park",
+      "values": {
+        "title": "Secretary of State Linda Park",
+        "body": "<p>Secretary of State Linda Park oversees elections, business registrations, and state archives. She has modernized voter registration processes and implemented secure online business filing systems since taking office in 2023.</p><p>Secretary Park previously served as a county elections director for twelve years and is a recognized expert in election security and administration.</p>",
+        "position": "Secretary of State",
+        "agency": ["Executive Office"],
+        "email": "sos@columbia.gov",
+        "phone": "(555) 100-0003",
+        "office": "State Office Building, Suite 300",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+          "alt": "Secretary of State Linda Park"
+        }
+      }
+    },
+    {
+      "id": "official-attorney-general",
+      "type": "node.official",
+      "path": "/officials/attorney-general-marcus-webb",
+      "values": {
+        "title": "Attorney General Marcus Webb",
+        "body": "<p>Attorney General Marcus Webb serves as the chief legal officer for the State of Columbia. His office enforces state laws, protects consumers, and represents the state in legal matters. AG Webb has prioritized combating consumer fraud, addressing the opioid crisis, and protecting civil rights.</p><p>Before his election, Attorney General Webb was a partner at a major law firm and served on the state's judicial nominating commission.</p>",
+        "position": "Attorney General",
+        "agency": ["Public Safety"],
+        "email": "ag@columbia.gov",
+        "phone": "(555) 100-0004",
+        "office": "Justice Building, 10th Floor",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+          "alt": "Attorney General Marcus Webb"
+        }
+      }
+    },
+    {
+      "id": "program-medicaid",
+      "type": "node.program",
+      "path": "/programs/medicaid-expansion",
+      "values": {
+        "title": "Medicaid Expansion Program",
+        "body": "<p>Columbia's Medicaid Expansion Program provides comprehensive health coverage to eligible low-income adults. Since its launch, the program has enrolled over 350,000 residents who previously lacked health insurance.</p><h2>Benefits</h2><ul><li>Doctor visits and preventive care</li><li>Hospital services</li><li>Prescription medications</li><li>Mental health and substance abuse treatment</li><li>Dental and vision coverage</li></ul><h2>How to Apply</h2><p>Applications can be submitted online through the Columbia Health Marketplace, by phone, or in person at any county HHS office.</p>",
+        "agency": ["Health & Human Services"],
+        "eligibility": "Adults ages 19-64 with income up to 138% of the Federal Poverty Level",
+        "budget": "$2.8 Billion",
+        "program_area": ["Healthcare"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+          "alt": "Medicaid Expansion Program"
+        }
+      }
+    },
+    {
+      "id": "program-pre-k",
+      "type": "node.program",
+      "path": "/programs/universal-pre-k",
+      "values": {
+        "title": "Universal Pre-K Initiative",
+        "body": "<p>The Universal Pre-K Initiative provides free, high-quality pre-kindergarten education to all four-year-olds in Columbia. The program emphasizes school readiness, social-emotional development, and early literacy skills.</p><h2>Program Features</h2><ul><li>Full-day pre-kindergarten classes</li><li>Certified early childhood educators</li><li>Evidence-based curriculum</li><li>Family engagement programs</li></ul><h2>Enrollment</h2><p>Enrollment opens each spring for the following school year. Families can apply through their local school district or participating community providers.</p>",
+        "agency": ["Education"],
+        "eligibility": "All four-year-old children residing in Columbia",
+        "budget": "$450 Million",
+        "program_area": ["Education"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+          "alt": "Universal Pre-K Initiative"
+        }
+      }
+    },
+    {
+      "id": "program-roads",
+      "type": "node.program",
+      "path": "/programs/road-improvement",
+      "values": {
+        "title": "Statewide Road Improvement Program",
+        "body": "<p>The Statewide Road Improvement Program is a multi-year initiative to repair, rebuild, and modernize Columbia's road infrastructure. The program addresses structurally deficient bridges, deteriorating highways, and expanding capacity in high-growth corridors.</p><h2>Program Goals</h2><ul><li>Repair 500 miles of deteriorated highways</li><li>Replace or rehabilitate 200 structurally deficient bridges</li><li>Improve traffic flow in 50 congested corridors</li><li>Expand bicycle and pedestrian infrastructure</li></ul>",
+        "agency": ["Transportation"],
+        "eligibility": "All Columbia municipalities and counties",
+        "budget": "$3.2 Billion over 5 years",
+        "program_area": ["Infrastructure"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=800&q=80",
+          "alt": "Road Improvement Program"
+        }
+      }
+    },
+    {
+      "id": "program-clean-energy",
+      "type": "node.program",
+      "path": "/programs/clean-energy-initiative",
+      "values": {
+        "title": "Columbia Clean Energy Initiative",
+        "body": "<p>The Columbia Clean Energy Initiative aims to transition the state to 80% renewable energy by 2035. The program provides incentives for solar and wind development, energy efficiency improvements, and electric vehicle adoption.</p><h2>Key Components</h2><ul><li>Solar and wind energy tax credits</li><li>Home energy efficiency rebates</li><li>Electric vehicle rebates and charging infrastructure</li><li>Clean energy workforce training</li></ul><h2>Impact</h2><p>Since launch, the initiative has created over 15,000 clean energy jobs and reduced carbon emissions by 18%.</p>",
+        "agency": ["Environmental Protection"],
+        "eligibility": "Columbia residents, businesses, and municipalities",
+        "budget": "$1.5 Billion",
+        "program_area": ["Environment"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+          "alt": "Clean Energy Initiative"
+        }
+      }
+    },
+    {
+      "id": "press-budget",
+      "type": "node.press_release",
+      "path": "/press-releases/fy2026-budget-proposal",
+      "values": {
+        "title": "Governor Wells Announces $42 Billion FY2026 Budget Proposal",
+        "body": "<p>Governor Patricia Wells today unveiled her proposed $42 billion budget for fiscal year 2026, prioritizing education, healthcare, and infrastructure investments while maintaining fiscal responsibility.</p><p>\"This budget reflects our commitment to investing in the services that matter most to Columbia families while keeping taxes low and maintaining our strong fiscal position,\" said Governor Wells.</p><h2>Budget Highlights</h2><ul><li>$12.5 billion for K-12 education, a 5% increase</li><li>$8.2 billion for healthcare and human services</li><li>$3.2 billion for transportation infrastructure</li><li>$1.5 billion for clean energy initiatives</li></ul><p>The budget proposal will now go to the State Legislature for review and approval.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
+          "alt": "FY2026 Budget Proposal"
+        },
+        "category": ["Budget"],
+        "featured": true,
+        "contact_name": "Sarah Mitchell",
+        "contact_email": "press@governor.columbia.gov"
+      }
+    },
+    {
+      "id": "press-health",
+      "type": "node.press_release",
+      "path": "/press-releases/medicaid-enrollment-milestone",
+      "values": {
+        "title": "Columbia Medicaid Expansion Reaches 350,000 Enrollees",
+        "body": "<p>The Department of Health & Human Services today announced that Columbia's Medicaid Expansion program has enrolled its 350,000th member, a milestone that underscores the program's success in expanding healthcare access across the state.</p><p>\"Every one of these enrollees is a Columbia resident who now has access to quality healthcare,\" said Dr. Maria Santos, Secretary of Health & Human Services. \"This program is saving lives and improving health outcomes in communities across our state.\"</p><p>The milestone comes two years ahead of projections, driven by community outreach efforts and streamlined online enrollment processes.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80",
+          "alt": "Medicaid Enrollment Milestone"
+        },
+        "category": ["Public Health"],
+        "featured": true,
+        "contact_name": "Jennifer Lopez",
+        "contact_email": "press@hhs.columbia.gov"
+      }
+    },
+    {
+      "id": "press-infrastructure",
+      "type": "node.press_release",
+      "path": "/press-releases/bridge-repair-funding",
+      "values": {
+        "title": "State Announces $800 Million Bridge Repair and Replacement Program",
+        "body": "<p>The Department of Transportation today announced an $800 million program to repair or replace 200 structurally deficient bridges across Columbia over the next three years.</p><p>\"Safe bridges are essential infrastructure that connect our communities and support our economy,\" said Transportation Secretary Robert Chen. \"This unprecedented investment will address decades of deferred maintenance.\"</p><p>The program will prioritize bridges based on structural condition, traffic volume, and economic impact. Construction is expected to begin this spring on the first 40 projects.</p>",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80",
+          "alt": "Bridge Repair Program"
+        },
+        "category": ["Infrastructure"],
+        "featured": false,
+        "contact_name": "Mike Thompson",
+        "contact_email": "press@dot.columbia.gov"
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About the State of Columbia",
+        "body": "<p>The State of Columbia is committed to transparent, efficient, and accountable government that serves all residents. Our state government is organized into executive, legislative, and judicial branches, with over 45 agencies and departments delivering essential services.</p><h2>Our Values</h2><ul><li><strong>Transparency</strong> - We believe in open government and public accountability.</li><li><strong>Equity</strong> - We are committed to equal access to services for all residents.</li><li><strong>Efficiency</strong> - We use taxpayer resources responsibly and effectively.</li><li><strong>Innovation</strong> - We embrace technology and new approaches to improve service delivery.</li></ul><h2>State Facts</h2><p>Columbia is home to 6.2 million residents across 67 counties. The state capital is Capital City, and the state's diverse economy includes healthcare, technology, agriculture, and manufacturing sectors.</p>"
+      }
+    },
+    {
+      "id": "page-contact",
+      "type": "node.page",
+      "path": "/contact",
+      "values": {
+        "title": "Contact the State of Columbia",
+        "body": "<h2>General Inquiries</h2><p>For general questions about state services and programs, please contact our constituent services office.</p><ul><li><strong>Phone:</strong> (555) 100-0000</li><li><strong>Email:</strong> info@columbia.gov</li><li><strong>Address:</strong> State Capitol Building, 100 Capitol Avenue, Capital City, CO 10001</li></ul><h2>Office Hours</h2><p>Monday through Friday, 8:00 AM to 5:00 PM Eastern Time. State offices are closed on state and federal holidays.</p><h2>Emergency Services</h2><p>For emergencies, dial 911. For non-emergency state services, call 211.</p>"
+      }
+    }
+  ]
+}
