@@ -255,10 +255,10 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
                 <span>An official website of the State of Cascadia</span>
               </div>
               <div className="flex gap-4">
-                <a href="/accessibility" className="hover:text-accent-400 transition-colors">Accessibility</a>
-                <a href="/privacy" className="hover:text-accent-400 transition-colors">Privacy Policy</a>
-                <a href="/terms" className="hover:text-accent-400 transition-colors">Terms of Use</a>
-                <a href="/sitemap" className="hover:text-accent-400 transition-colors">Sitemap</a>
+                <a href="/contact" className="hover:text-accent-400 transition-colors">Accessibility</a>
+                <a href="/contact" className="hover:text-accent-400 transition-colors">Privacy Policy</a>
+                <a href="/contact" className="hover:text-accent-400 transition-colors">Terms of Use</a>
+                <a href="/programs" className="hover:text-accent-400 transition-colors">Sitemap</a>
               </div>
             </div>
           </div>
