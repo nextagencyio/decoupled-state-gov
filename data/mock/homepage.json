@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-population",
               "title": "",
-              "number": "6.2M",
+              "number": "6.2M", "value": "6.2M",
               "label": "Residents Served"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-agencies",
               "title": "",
-              "number": "45+",
+              "number": "45+", "value": "45+",
               "label": "State Agencies"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-budget",
               "title": "",
-              "number": "$42B",
+              "number": "$42B", "value": "$42B",
               "label": "Annual Budget"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-employees",
               "title": "",
-              "number": "85,000+",
+              "number": "85,000+", "value": "85,000+",
               "label": "State Employees"
             }
           ],
