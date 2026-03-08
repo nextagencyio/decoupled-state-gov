@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import ProgramCard from '../components/ProgramCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'State Programs | State of Cascadia',

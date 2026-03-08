@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import OfficialCard from '../components/OfficialCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Elected Officials | State of Cascadia',
