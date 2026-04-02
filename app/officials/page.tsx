@@ -1,6 +1,5 @@
+import { getClient } from '@/lib/drupal-client'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_OFFICIALS } from '@/lib/queries'
 import { OfficialsData } from '@/lib/types'
 import Header from '../components/Header'
@@ -16,13 +15,8 @@ export const metadata: Metadata = {
 
 async function getOfficials() {
   try {
-    const requestHeaders = await headers()
-    const apolloClient = getServerApolloClient(requestHeaders)
-    const { data } = await apolloClient.query<OfficialsData>({
-      query: GET_OFFICIALS,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    })
+    const client = getClient()
+    const { data } = await client.raw(GET_OFFICIALS, { first: 50 })
     return data?.nodeOfficials?.nodes || []
   } catch (error) {
     console.error('Error fetching officials:', error)
