@@ -28,6 +28,7 @@ import Image from 'next/image'
 
 interface HomepageRendererProps {
   homepageContent: DrupalHomepage | null | undefined
+  featuredAgencies?: any[]
 }
 
 const quickLinks = [
@@ -55,7 +56,7 @@ const galleryImages = [
   { src: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80&fit=crop', alt: 'Community event', caption: 'Community Engagement' },
 ]
 
-export default function HomepageRenderer({ homepageContent }: HomepageRendererProps) {
+export default function HomepageRenderer({ homepageContent, featuredAgencies }: HomepageRendererProps) {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -115,7 +116,7 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
 
       {/* Featured Agencies */}
       <ErrorBoundary>
-        <AgenciesPreview homepageContent={homepageContent} />
+        <AgenciesPreview homepageContent={homepageContent} featuredAgencies={featuredAgencies} />
       </ErrorBoundary>
 
       {/* State Agencies Section */}

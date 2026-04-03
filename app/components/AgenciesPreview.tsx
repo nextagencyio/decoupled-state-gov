@@ -1,52 +1,20 @@
 'use client'
 
 import Link from 'next/link'
-import { useQuery } from '@apollo/client'
-import { GET_FEATURED_AGENCIES } from '@/lib/queries'
 import { DrupalHomepage, DrupalAgency } from '@/lib/types'
 import { ArrowRight, Building, User } from 'lucide-react'
 import ResponsiveImage from './ResponsiveImage'
 
 interface AgenciesPreviewProps {
   homepageContent?: DrupalHomepage | null
+  featuredAgencies?: any[]
 }
 
-interface FeaturedAgenciesData {
-  nodeAgencies: {
-    nodes: DrupalAgency[]
-  }
-}
-
-export default function AgenciesPreview({ homepageContent }: AgenciesPreviewProps) {
-  const { data, loading, error } = useQuery<FeaturedAgenciesData>(GET_FEATURED_AGENCIES)
-
-  const agencies = data?.nodeAgencies?.nodes || []
+export default function AgenciesPreview({ homepageContent, featuredAgencies = [] }: AgenciesPreviewProps) {
+  const agencies = featuredAgencies
   const sectionTitle = homepageContent?.featuredAgenciesTitle || 'Key State Agencies'
 
-  if (loading) {
-    return (
-      <section className="py-16 md:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">{sectionTitle}</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="animate-pulse">
-                <div className="h-1 bg-primary-200 rounded-t" />
-                <div className="h-48 bg-gray-200 mb-4" />
-                <div className="h-4 bg-gray-200 rounded w-1/4 mb-3" />
-                <div className="h-6 bg-gray-200 rounded w-3/4 mb-3" />
-                <div className="h-4 bg-gray-200 rounded w-full" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    )
-  }
-
-  if (error || agencies.length === 0) {
+  if (agencies.length === 0) {
     return null
   }
 
@@ -70,7 +38,7 @@ export default function AgenciesPreview({ homepageContent }: AgenciesPreviewProp
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {agencies.map((agency) => (
+          {agencies.map((agency: any) => (
             <Link
               key={agency.id}
               href={agency.path || `/agencies/${agency.id}`}

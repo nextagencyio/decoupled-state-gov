@@ -1,4 +1,5 @@
 import { getClient } from '@/lib/drupal-client'
+import { GET_HOMEPAGE_DATA, GET_FEATURED_AGENCIES } from '@/lib/queries'
 import HomepageRenderer from './components/HomepageRenderer'
 import SetupGuide from './components/SetupGuide'
 import ContentSetupGuide from './components/ContentSetupGuide'
@@ -40,14 +41,25 @@ export default async function Home() {
     return <SetupGuide missingVars={configStatus.missingVars} />
   }
 
-  const client = getClient()
-  const homepageContent = await client.getEntryByPath('/') as any
+  try {
+    const client = getClient()
+    const [homepageData, agenciesData] = await Promise.all([
+      client.raw(GET_HOMEPAGE_DATA),
+      client.raw(GET_FEATURED_AGENCIES).catch(() => null),
+    ])
+    const homepageContent = homepageData?.nodeHomepages?.nodes?.[0] || null
+    const featuredAgencies = agenciesData?.nodeAgencies?.nodes || []
 
-  // Check if connected but no content exists - show content import guide
-  if (!homepageContent) {
+    // Check if connected but no content exists - show content import guide
+    if (!homepageContent) {
+      const drupalBaseUrl = process.env.NEXT_PUBLIC_DRUPAL_BASE_URL
+      return <ContentSetupGuide drupalBaseUrl={drupalBaseUrl} />
+    }
+
+    return <HomepageRenderer homepageContent={homepageContent} featuredAgencies={featuredAgencies} />
+  } catch (error) {
+    console.error('Error fetching homepage:', error)
     const drupalBaseUrl = process.env.NEXT_PUBLIC_DRUPAL_BASE_URL
     return <ContentSetupGuide drupalBaseUrl={drupalBaseUrl} />
   }
-
-  return <HomepageRenderer homepageContent={homepageContent} />
 }
